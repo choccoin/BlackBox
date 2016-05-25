@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为了密码安全，请验证安全信息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy8-fB-WNO">
-                                <rect key="frame" x="20" y="240" width="560" height="21"/>
+                                <rect key="frame" x="20" y="172" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlackBox" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgv-7O-jtP">
-                                <rect key="frame" x="20" y="133" width="560" height="21"/>
+                                <rect key="frame" x="20" y="73" width="560" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="VC2-K6-caL"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <state key="normal" title="新用户？创建BlackBox"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlackBox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4m-xF-pQ9">
-                                <rect key="frame" x="20" y="291" width="101" height="21"/>
+                                <rect key="frame" x="20" y="223" width="101" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="101" id="cAP-35-4wt"/>
                                 </constraints>
@@ -46,21 +46,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安全码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5u-g3-vGC">
-                                <rect key="frame" x="20" y="343" width="101" height="21"/>
+                                <rect key="frame" x="20" y="275" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHM-js-d9E">
-                                <rect key="frame" x="102" y="287" width="478" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号或者邮箱" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OHM-js-d9E">
+                                <rect key="frame" x="102" y="219" width="478" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入安全登录码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5gz-2g-txy">
-                                <rect key="frame" x="102" y="339" width="478" height="30"/>
+                                <rect key="frame" x="102" y="271" width="478" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p31-uh-PhS">
+                                <rect key="frame" x="277" y="376" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchIDFun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PwF-3k-uJS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -73,7 +80,7 @@
                             <constraint firstItem="OHM-js-d9E" firstAttribute="leading" secondItem="5gz-2g-txy" secondAttribute="leading" id="Pff-hw-r73"/>
                             <constraint firstItem="OHM-js-d9E" firstAttribute="trailing" secondItem="5gz-2g-txy" secondAttribute="trailing" id="SPn-f3-SlF"/>
                             <constraint firstItem="jy8-fB-WNO" firstAttribute="leading" secondItem="D4m-xF-pQ9" secondAttribute="leading" id="Sxo-CS-yS7"/>
-                            <constraint firstItem="zgv-7O-jtP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="113" id="aGC-MF-bun"/>
+                            <constraint firstItem="zgv-7O-jtP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="aGC-MF-bun"/>
                             <constraint firstItem="zgv-7O-jtP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="caT-eJ-S1t"/>
                             <constraint firstItem="zgv-7O-jtP" firstAttribute="trailing" secondItem="jy8-fB-WNO" secondAttribute="trailing" id="fL2-Fa-dOt"/>
                             <constraint firstItem="e5u-g3-vGC" firstAttribute="leading" secondItem="xzs-Zi-AMH" secondAttribute="leading" id="fea-DH-a6w"/>
@@ -85,7 +92,7 @@
                             <constraint firstItem="jy8-fB-WNO" firstAttribute="trailing" secondItem="OHM-js-d9E" secondAttribute="trailing" id="qRH-bd-LLv"/>
                             <constraint firstItem="D4m-xF-pQ9" firstAttribute="centerY" secondItem="OHM-js-d9E" secondAttribute="centerY" id="ray-VQ-XrK"/>
                             <constraint firstItem="zgv-7O-jtP" firstAttribute="leading" secondItem="jy8-fB-WNO" secondAttribute="leading" id="us1-iI-UzA"/>
-                            <constraint firstItem="jy8-fB-WNO" firstAttribute="top" secondItem="zgv-7O-jtP" secondAttribute="bottom" constant="86" id="yXQ-UL-bV4"/>
+                            <constraint firstItem="jy8-fB-WNO" firstAttribute="top" secondItem="zgv-7O-jtP" secondAttribute="bottom" constant="78" id="yXQ-UL-bV4"/>
                         </constraints>
                     </view>
                 </viewController>
