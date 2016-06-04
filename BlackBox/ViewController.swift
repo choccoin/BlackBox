@@ -12,6 +12,14 @@ import LocalAuthentication
 
 
 class ViewController: UIViewController {
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtName: UITextField!
+    @IBAction func close(sender: AnyObject) {
+        txtName.resignFirstResponder()
+            txtPassword.resignFirstResponder()
+        
+        
+    }
     @IBAction func touchIDFun(sender: AnyObject) {
         let tID : TouchID = TouchID()
         tID.touch()
