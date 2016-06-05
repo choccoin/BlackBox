@@ -17,12 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTh-kJ-gU1">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <connections>
-                                    <action selector="close:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jDV-5T-1hb"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为了密码安全，请验证安全信息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy8-fB-WNO">
                                 <rect key="frame" x="20" y="172" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -60,12 +54,18 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号或者邮箱" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OHM-js-d9E">
                                 <rect key="frame" x="102" y="219" width="478" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FEb-GM-OFR"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入安全登录码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5gz-2g-txy">
                                 <rect key="frame" x="102" y="271" width="478" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="A7i-CH-k6K"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p31-uh-PhS">
                                 <rect key="frame" x="255" y="360" width="91" height="30"/>
@@ -90,15 +90,12 @@
                             <constraint firstItem="OHM-js-d9E" firstAttribute="trailing" secondItem="5gz-2g-txy" secondAttribute="trailing" id="SPn-f3-SlF"/>
                             <constraint firstItem="jy8-fB-WNO" firstAttribute="leading" secondItem="D4m-xF-pQ9" secondAttribute="leading" id="Sxo-CS-yS7"/>
                             <constraint firstItem="p31-uh-PhS" firstAttribute="centerX" secondItem="jy8-fB-WNO" secondAttribute="centerX" id="X5H-PG-pN4"/>
-                            <constraint firstItem="xTh-kJ-gU1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XX3-yi-37Z"/>
                             <constraint firstItem="zgv-7O-jtP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="aGC-MF-bun"/>
                             <constraint firstItem="zgv-7O-jtP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="caT-eJ-S1t"/>
                             <constraint firstItem="zgv-7O-jtP" firstAttribute="trailing" secondItem="jy8-fB-WNO" secondAttribute="trailing" id="fL2-Fa-dOt"/>
                             <constraint firstItem="e5u-g3-vGC" firstAttribute="leading" secondItem="xzs-Zi-AMH" secondAttribute="leading" id="fea-DH-a6w"/>
-                            <constraint firstItem="xTh-kJ-gU1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fx2-RC-cwf"/>
                             <constraint firstItem="5gz-2g-txy" firstAttribute="top" secondItem="D4m-xF-pQ9" secondAttribute="bottom" constant="27" id="guB-I6-dl8"/>
                             <constraint firstItem="e5u-g3-vGC" firstAttribute="centerY" secondItem="5gz-2g-txy" secondAttribute="centerY" id="hhW-x2-1eV"/>
-                            <constraint firstItem="xTh-kJ-gU1" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="iBo-jv-G2k"/>
                             <constraint firstItem="p31-uh-PhS" firstAttribute="top" secondItem="5gz-2g-txy" secondAttribute="bottom" constant="59" id="kkv-4Y-GBj"/>
                             <constraint firstAttribute="bottom" secondItem="xzs-Zi-AMH" secondAttribute="bottom" constant="20" symbolic="YES" id="mNr-xX-OCk"/>
                             <constraint firstItem="D4m-xF-pQ9" firstAttribute="leading" secondItem="e5u-g3-vGC" secondAttribute="leading" id="otC-cQ-fdT"/>
@@ -106,7 +103,6 @@
                             <constraint firstItem="jy8-fB-WNO" firstAttribute="trailing" secondItem="OHM-js-d9E" secondAttribute="trailing" id="qRH-bd-LLv"/>
                             <constraint firstItem="D4m-xF-pQ9" firstAttribute="centerY" secondItem="OHM-js-d9E" secondAttribute="centerY" id="ray-VQ-XrK"/>
                             <constraint firstItem="zgv-7O-jtP" firstAttribute="leading" secondItem="jy8-fB-WNO" secondAttribute="leading" id="us1-iI-UzA"/>
-                            <constraint firstItem="xTh-kJ-gU1" firstAttribute="centerX" secondItem="zgv-7O-jtP" secondAttribute="centerX" id="y0X-Mw-F8a"/>
                             <constraint firstItem="jy8-fB-WNO" firstAttribute="top" secondItem="zgv-7O-jtP" secondAttribute="bottom" constant="78" id="yXQ-UL-bV4"/>
                         </constraints>
                     </view>

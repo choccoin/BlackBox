@@ -11,15 +11,9 @@ import LocalAuthentication
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtName: UITextField!
-    @IBAction func close(sender: AnyObject) {
-        txtName.resignFirstResponder()
-            txtPassword.resignFirstResponder()
-        
-        
-    }
     @IBAction func touchIDFun(sender: AnyObject) {
         let tID : TouchID = TouchID()
         tID.touch()
@@ -35,6 +29,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
 
