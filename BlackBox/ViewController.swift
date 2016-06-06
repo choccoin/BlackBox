@@ -17,9 +17,11 @@ class ViewController: UIViewController,UITextFieldDelegate{
     @IBAction func touchIDFun(sender: AnyObject) {
         let tID : TouchID = TouchID()
         tID.touch()
-        
-        
     }
+    @IBAction func exitTxtName(sender: AnyObject) {
+//      sender.resignFirstResponder()
+        txtPassword.becomeFirstResponder()
+  }
 
     override func viewDidLoad() {
         super.viewDidLoad()
