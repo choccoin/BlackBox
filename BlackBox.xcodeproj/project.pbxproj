@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650ADB081D071FBB00B7592D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 650ADB071D071FBB00B7592D /* Settings.bundle */; };
 		652492011CF5FC8700C78959 /* TouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652492001CF5FC8700C78959 /* TouchID.swift */; };
 		E8744F721CEB5B2A00C8AB6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744F711CEB5B2A00C8AB6B /* AppDelegate.swift */; };
 		E8744F741CEB5B2A00C8AB6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744F731CEB5B2A00C8AB6B /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650ADB071D071FBB00B7592D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		652492001CF5FC8700C78959 /* TouchID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchID.swift; sourceTree = "<group>"; };
 		E8744F6E1CEB5B2A00C8AB6B /* BlackBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8744F711CEB5B2A00C8AB6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				E8744F801CEB5B2A00C8AB6B /* Info.plist */,
 				E8744F781CEB5B2A00C8AB6B /* BlackBox.xcdatamodeld */,
 				652492001CF5FC8700C78959 /* TouchID.swift */,
+				650ADB071D071FBB00B7592D /* Settings.bundle */,
 			);
 			path = BlackBox;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650ADB081D071FBB00B7592D /* Settings.bundle in Resources */,
 				E8744F7F1CEB5B2A00C8AB6B /* LaunchScreen.storyboard in Resources */,
 				E8744F7C1CEB5B2A00C8AB6B /* Assets.xcassets in Resources */,
 				E8744F771CEB5B2A00C8AB6B /* Main.storyboard in Resources */,
