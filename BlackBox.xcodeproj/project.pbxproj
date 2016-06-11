@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		650ADB081D071FBB00B7592D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 650ADB071D071FBB00B7592D /* Settings.bundle */; };
 		652492011CF5FC8700C78959 /* TouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652492001CF5FC8700C78959 /* TouchID.swift */; };
+		6559F6E81D0BFDF000074BD5 /* NewBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559F6E71D0BFDF000074BD5 /* NewBox.swift */; };
 		65FF0D1C1D095C4A0018CBDF /* baseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65FF0D1A1D095C4A0018CBDF /* baseModel.xcdatamodeld */; };
 		65FF0D1F1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF0D1D1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift */; };
 		65FF0D201D096B3B0018CBDF /* BoxManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF0D1E1D096B3B0018CBDF /* BoxManagedObject.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		650ADB071D071FBB00B7592D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		652492001CF5FC8700C78959 /* TouchID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchID.swift; sourceTree = "<group>"; };
+		6559F6E71D0BFDF000074BD5 /* NewBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBox.swift; sourceTree = "<group>"; };
 		65FF0D1B1D095C4A0018CBDF /* baseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = baseModel.xcdatamodel; sourceTree = "<group>"; };
 		65FF0D1D1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BoxManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65FF0D1E1D096B3B0018CBDF /* BoxManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxManagedObject.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				65FF0D1A1D095C4A0018CBDF /* baseModel.xcdatamodeld */,
 				65FF0D1D1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift */,
 				65FF0D1E1D096B3B0018CBDF /* BoxManagedObject.swift */,
+				6559F6E71D0BFDF000074BD5 /* NewBox.swift */,
 			);
 			path = BlackBox;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				65FF0D201D096B3B0018CBDF /* BoxManagedObject.swift in Sources */,
 				65FF0D1F1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift in Sources */,
+				6559F6E81D0BFDF000074BD5 /* NewBox.swift in Sources */,
 				652492011CF5FC8700C78959 /* TouchID.swift in Sources */,
 				E8744F741CEB5B2A00C8AB6B /* ViewController.swift in Sources */,
 				E8744F721CEB5B2A00C8AB6B /* AppDelegate.swift in Sources */,

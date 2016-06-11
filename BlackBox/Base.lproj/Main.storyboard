@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
         </scene>
-        <!--View Controller-->
+        <!--New Box-->
         <scene sceneID="X9F-LV-T9Z">
             <objects>
-                <viewController id="DVX-x0-V9i" sceneMemberID="viewController">
+                <viewController id="DVX-x0-V9i" customClass="NewBox" customModule="BlackBox" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cdv-Vn-bCK"/>
                         <viewControllerLayoutGuide type="bottom" id="Lwd-xG-Wi1"/>
@@ -141,8 +141,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ghg-Hv-b0c">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="命名BlackBox" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zWR-9W-ihy">
+                                <rect key="frame" x="20" y="53" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="初始密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOf-VL-bHU">
+                                <rect key="frame" x="20" y="91" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcD-ha-RnV">
+                                <rect key="frame" x="531" y="129" width="51" height="31"/>
+                                <connections>
+                                    <action selector="ViewPSW:" destination="DVX-x0-V9i" eventType="valueChanged" id="eqx-pn-lNC"/>
+                                </connections>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="top" secondItem="cdv-Vn-bCK" secondAttribute="bottom" constant="33" id="4HG-do-ADA"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="leading" secondItem="Ghg-Hv-b0c" secondAttribute="leadingMargin" id="83c-cN-bSn"/>
+                            <constraint firstItem="cOf-VL-bHU" firstAttribute="top" secondItem="zWR-9W-ihy" secondAttribute="bottom" constant="8" symbolic="YES" id="Cu2-r9-Itu"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="trailing" secondItem="Ghg-Hv-b0c" secondAttribute="trailingMargin" id="EcN-H1-pTr"/>
+                            <constraint firstItem="bcD-ha-RnV" firstAttribute="top" secondItem="cOf-VL-bHU" secondAttribute="bottom" constant="8" symbolic="YES" id="RGs-Mt-csp"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="trailing" secondItem="cOf-VL-bHU" secondAttribute="trailing" id="aYf-WR-lZD"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="leading" secondItem="cOf-VL-bHU" secondAttribute="leading" id="f4G-cj-ZD4"/>
+                            <constraint firstItem="cOf-VL-bHU" firstAttribute="trailing" secondItem="bcD-ha-RnV" secondAttribute="trailing" id="ySy-rY-fSL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BName" destination="zWR-9W-ihy" id="IQM-2K-N9o"/>
+                        <outlet property="FirstPSW" destination="cOf-VL-bHU" id="b5r-FG-GZ0"/>
+                        <outlet property="ViewPSW" destination="bcD-ha-RnV" id="cvA-wC-jkO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kta-Ml-2a9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
