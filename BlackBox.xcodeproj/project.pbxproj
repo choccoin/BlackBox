@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6508F0491D170A6100F0DD01 /* BL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508F0481D170A6100F0DD01 /* BL.swift */; };
 		650ADB081D071FBB00B7592D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 650ADB071D071FBB00B7592D /* Settings.bundle */; };
 		652492011CF5FC8700C78959 /* TouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652492001CF5FC8700C78959 /* TouchID.swift */; };
+		6529F59E1D105A6E0049E915 /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529F59D1D105A6E0049E915 /* Domain.swift */; };
 		6559F6E81D0BFDF000074BD5 /* NewBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559F6E71D0BFDF000074BD5 /* NewBox.swift */; };
-		65FF0D1C1D095C4A0018CBDF /* baseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65FF0D1A1D095C4A0018CBDF /* baseModel.xcdatamodeld */; };
-		65FF0D1F1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF0D1D1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift */; };
-		65FF0D201D096B3B0018CBDF /* BoxManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF0D1E1D096B3B0018CBDF /* BoxManagedObject.swift */; };
+		6575B89D1D0FB1F500A12FC8 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575B89C1D0FB1F500A12FC8 /* DAO.swift */; };
 		E8744F721CEB5B2A00C8AB6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744F711CEB5B2A00C8AB6B /* AppDelegate.swift */; };
 		E8744F741CEB5B2A00C8AB6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744F731CEB5B2A00C8AB6B /* ViewController.swift */; };
 		E8744F771CEB5B2A00C8AB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8744F751CEB5B2A00C8AB6B /* Main.storyboard */; };
@@ -22,12 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6508F0481D170A6100F0DD01 /* BL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL.swift; sourceTree = "<group>"; };
 		650ADB071D071FBB00B7592D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		652492001CF5FC8700C78959 /* TouchID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchID.swift; sourceTree = "<group>"; };
+		6529F59D1D105A6E0049E915 /* Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 		6559F6E71D0BFDF000074BD5 /* NewBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBox.swift; sourceTree = "<group>"; };
-		65FF0D1B1D095C4A0018CBDF /* baseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = baseModel.xcdatamodel; sourceTree = "<group>"; };
-		65FF0D1D1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BoxManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		65FF0D1E1D096B3B0018CBDF /* BoxManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxManagedObject.swift; sourceTree = "<group>"; };
+		6575B89C1D0FB1F500A12FC8 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		E8744F6E1CEB5B2A00C8AB6B /* BlackBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8744F711CEB5B2A00C8AB6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8744F731CEB5B2A00C8AB6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,10 +77,10 @@
 				E8744F781CEB5B2A00C8AB6B /* BlackBox.xcdatamodeld */,
 				652492001CF5FC8700C78959 /* TouchID.swift */,
 				650ADB071D071FBB00B7592D /* Settings.bundle */,
-				65FF0D1A1D095C4A0018CBDF /* baseModel.xcdatamodeld */,
-				65FF0D1D1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift */,
-				65FF0D1E1D096B3B0018CBDF /* BoxManagedObject.swift */,
 				6559F6E71D0BFDF000074BD5 /* NewBox.swift */,
+				6575B89C1D0FB1F500A12FC8 /* DAO.swift */,
+				6529F59D1D105A6E0049E915 /* Domain.swift */,
+				6508F0481D170A6100F0DD01 /* BL.swift */,
 			);
 			path = BlackBox;
 			sourceTree = "<group>";
@@ -158,14 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65FF0D201D096B3B0018CBDF /* BoxManagedObject.swift in Sources */,
-				65FF0D1F1D096B3B0018CBDF /* BoxManagedObject+CoreDataProperties.swift in Sources */,
 				6559F6E81D0BFDF000074BD5 /* NewBox.swift in Sources */,
+				6508F0491D170A6100F0DD01 /* BL.swift in Sources */,
 				652492011CF5FC8700C78959 /* TouchID.swift in Sources */,
 				E8744F741CEB5B2A00C8AB6B /* ViewController.swift in Sources */,
 				E8744F721CEB5B2A00C8AB6B /* AppDelegate.swift in Sources */,
+				6575B89D1D0FB1F500A12FC8 /* DAO.swift in Sources */,
 				E8744F7A1CEB5B2A00C8AB6B /* BlackBox.xcdatamodeld in Sources */,
-				65FF0D1C1D095C4A0018CBDF /* baseModel.xcdatamodeld in Sources */,
+				6529F59E1D105A6E0049E915 /* Domain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,16 +328,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		65FF0D1A1D095C4A0018CBDF /* baseModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				65FF0D1B1D095C4A0018CBDF /* baseModel.xcdatamodel */,
-			);
-			currentVersion = 65FF0D1B1D095C4A0018CBDF /* baseModel.xcdatamodel */;
-			path = baseModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		E8744F781CEB5B2A00C8AB6B /* BlackBox.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

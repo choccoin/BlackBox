@@ -158,17 +158,31 @@
                                     <action selector="ViewPSW:" destination="DVX-x0-V9i" eventType="valueChanged" id="eqx-pn-lNC"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m8-wI-LCb">
+                                <rect key="frame" x="20" y="168" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fYP-pG-0CV"/>
+                                </constraints>
+                                <state key="normal" title="创建Box"/>
+                                <connections>
+                                    <action selector="createBox:" destination="DVX-x0-V9i" eventType="touchUpInside" id="Wli-Gt-Y7Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zWR-9W-ihy" firstAttribute="top" secondItem="cdv-Vn-bCK" secondAttribute="bottom" constant="33" id="4HG-do-ADA"/>
-                            <constraint firstItem="zWR-9W-ihy" firstAttribute="leading" secondItem="Ghg-Hv-b0c" secondAttribute="leadingMargin" id="83c-cN-bSn"/>
-                            <constraint firstItem="cOf-VL-bHU" firstAttribute="top" secondItem="zWR-9W-ihy" secondAttribute="bottom" constant="8" symbolic="YES" id="Cu2-r9-Itu"/>
-                            <constraint firstItem="zWR-9W-ihy" firstAttribute="trailing" secondItem="Ghg-Hv-b0c" secondAttribute="trailingMargin" id="EcN-H1-pTr"/>
-                            <constraint firstItem="bcD-ha-RnV" firstAttribute="top" secondItem="cOf-VL-bHU" secondAttribute="bottom" constant="8" symbolic="YES" id="RGs-Mt-csp"/>
-                            <constraint firstItem="zWR-9W-ihy" firstAttribute="trailing" secondItem="cOf-VL-bHU" secondAttribute="trailing" id="aYf-WR-lZD"/>
-                            <constraint firstItem="zWR-9W-ihy" firstAttribute="leading" secondItem="cOf-VL-bHU" secondAttribute="leading" id="f4G-cj-ZD4"/>
-                            <constraint firstItem="cOf-VL-bHU" firstAttribute="trailing" secondItem="bcD-ha-RnV" secondAttribute="trailing" id="ySy-rY-fSL"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="top" secondItem="cdv-Vn-bCK" secondAttribute="bottom" constant="33" id="1eL-Aa-Akl"/>
+                            <constraint firstItem="bcD-ha-RnV" firstAttribute="top" secondItem="cOf-VL-bHU" secondAttribute="bottom" constant="8" symbolic="YES" id="LQ1-tl-f8a"/>
+                            <constraint firstItem="cOf-VL-bHU" firstAttribute="trailing" secondItem="bcD-ha-RnV" secondAttribute="trailing" id="Mjb-PB-pub"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="leading" secondItem="Ghg-Hv-b0c" secondAttribute="leadingMargin" id="Tbr-oy-Jvp"/>
+                            <constraint firstItem="cOf-VL-bHU" firstAttribute="leading" secondItem="0m8-wI-LCb" secondAttribute="leading" id="WxE-lk-uy2"/>
+                            <constraint firstItem="bcD-ha-RnV" firstAttribute="trailing" secondItem="0m8-wI-LCb" secondAttribute="trailing" id="bGH-zp-GEd"/>
+                            <constraint firstItem="0m8-wI-LCb" firstAttribute="top" secondItem="bcD-ha-RnV" secondAttribute="bottom" constant="8" symbolic="YES" id="bxm-ms-bKt"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="leading" secondItem="cOf-VL-bHU" secondAttribute="leading" id="o56-jH-1u3"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="trailing" secondItem="cOf-VL-bHU" secondAttribute="trailing" id="pvd-N8-0iq"/>
+                            <constraint firstItem="cOf-VL-bHU" firstAttribute="top" secondItem="zWR-9W-ihy" secondAttribute="bottom" constant="8" symbolic="YES" id="yCS-MO-hXy"/>
+                            <constraint firstItem="zWR-9W-ihy" firstAttribute="trailing" secondItem="Ghg-Hv-b0c" secondAttribute="trailingMargin" id="zP0-0o-33D"/>
                         </constraints>
                     </view>
                     <connections>

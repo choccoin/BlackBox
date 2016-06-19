@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="BankCard" syncable="YES">
+        <relationship name="boxID" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlackBox" inverseName="id" inverseEntity="BlackBox" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="comma"/>
+                <index value="separated"/>
+                <index value="properties"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
     <entity name="BlackBox" representedClassName="BoxManagedObject" syncable="YES">
         <attribute name="logo" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BankCard" inverseName="boxID" inverseEntity="BankCard" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="comma"/>
+                <index value="separated"/>
+                <index value="properties"/>
+            </compoundIndex>
+        </compoundIndexes>
     </entity>
     <elements>
-        <element name="BlackBox" positionX="-2574" positionY="-4482" width="128" height="88"/>
+        <element name="BlackBox" positionX="-2430" positionY="-3843" width="162" height="103"/>
+        <element name="BankCard" positionX="-2126" positionY="-3604" width="128" height="58"/>
     </elements>
 </model>

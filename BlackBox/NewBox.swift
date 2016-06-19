@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+//import CoreData
 
 class NewBox : UIViewController{
     @IBOutlet weak var BName: UITextField!
@@ -20,6 +21,10 @@ class NewBox : UIViewController{
         } else {
         FirstPSW.secureTextEntry = false
         }
+    }
+    @IBAction func createBox(sender: AnyObject) {
+ //       let dataApp = UIApplication.sharedApplication().delegate as! AppDelegate
+   //     let context = dataApp.managedObjectContext
     }
     
 }
